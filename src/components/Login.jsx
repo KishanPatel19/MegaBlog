@@ -57,7 +57,7 @@ function Login() {
             <Input 
             label = "Email :"
             type = "email"
-            placeholder="Enter your email :"
+            placeholder="Enter your email... "
             {...register("email",{
               required:true,
               validate:(value)=>/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value)||
@@ -67,7 +67,7 @@ function Login() {
             <Input
             label ="password"
             type = "password"
-            placeholder="Enter your password :"
+            placeholder="Enter your password... "
             {...register("password",{
               required:true
             })}
